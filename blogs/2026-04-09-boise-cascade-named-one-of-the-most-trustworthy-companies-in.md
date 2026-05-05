@@ -1,0 +1,16 @@
+---
+title: "Boise Cascade named one of the Most Trustworthy Companies in America in 2026"
+url: "https://www.bc.com/boise-cascade-named-one-of-the-most-trustworthy-companies-in-america-in-2026/"
+date: "Thu, 09 Apr 2026 20:00:38 +0000"
+author: "amyevans"
+feed_url: "https://www.bc.com/feed/"
+---
+<p><img alt="" class="wp-image-14036 alignright" height="291" src="https://www.bc.com/wp-content/uploads/2026/04/Newsweek_US-Trustworthy_2026_Basic-scaled.png" width="220" />BOISE, IDAHO — Boise Cascade Company (NYSE: BCC) was recently named one of the Most Trustworthy Companies in America in 2026 by Newsweek. The list of winners spans 23 industries and recognizes 700 leading companies that have demonstrated exceptional trustworthiness in the eyes of consumers, employees, and investors. Boise Cascade ranked in the Top 12 within its industry.</p>
+<p>“It is an incredible honor to be recognized as one of the Most Trustworthy Companies in America,” said Jeff Strom, CEO. “This award belongs to our 7,500 associates who build trust in how they show up every day for customers, suppliers, and each other. Day in and day out, our team members lead with our values, keep commitments, and do the right thing, even when it’s not the easy thing. And we show accountability and integrity when we fall short. That’s what builds trust. And that’s what this recognition reflects. We are truly grateful for the trust others place in us, and we are committed to continuing to earn that trust every day.”</p>
+<p>Awarded by Newsweek and Statista, this recognition is determined using an independent survey of 25,000 U.S. respondents. The survey results are combined with a social listening analysis measuring online media sentiment. All companies headquartered in the U.S. with a revenue over $500 million are considered.</p>
+<p>To learn more about the award or view the complete list of 2026 award recipients, visit: <a href="https://rankings.newsweek.com/most-trustworthy-companies-in-america-2026">Most Trustworthy Companies in America 2026</a></p>
+<p><strong>Investor Contact:</strong>  Chris Forrey, <a href="mailto:investor@bc.com">investor@bc.com</a><br />
+<strong>Media Contact:</strong>  Amy Evans, <a href="mailto:mediarelations@bc.com">mediarelations@bc.com</a></p>
+<p><strong>About Boise Cascade<br />
+</strong>Boise Cascade is one of the largest U.S. wholesale distributors of building materials and a leading manufacturer of engineered wood products and plywood in North America. Our integrated model and national distribution footprint position us to deliver outstanding service to our customers across a broad range of industry-leading products, including key structural products that we produce. Headquartered in Boise, Idaho, we operate more than 60 distribution and manufacturing facilities strategically located across the U.S. and Canada. Our work is powered by a dedicated team of over 7,500 people. For more information, visit: <a href="https://www.bc.com/company/" rel="noopener" target="_blank">Boise Cascade | Our Company</a>.</p>
+<p>The post <a href="https://www.bc.com/boise-cascade-named-one-of-the-most-trustworthy-companies-in-america-in-2026/">Boise Cascade named one of the Most Trustworthy Companies in America in 2026</a> appeared first on <a href="https://www.bc.com">Boise Cascade</a>.</p>

@@ -1,0 +1,13 @@
+{
+  "repo": "boise-cascade",
+  "feeds": [
+    {
+      "source": "https://www.bc.com/blog/",
+      "feed_url": "https://www.bc.com/feed/",
+      "saved": 8,
+      "title": "Boise Cascade"
+    }
+  ],
+  "post_count": 8,
+  "fetched": "2026-05-03T23:24:01Z"
+}
