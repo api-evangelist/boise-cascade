@@ -22,6 +22,8 @@ tags:
   - Manufacturing
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/boise-cascade
   - type: Website
     url: https://www.bc.com
   - type: About
