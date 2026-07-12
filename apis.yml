@@ -23,6 +23,8 @@ tags:
   - Fortune 1000
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/boise-cascade-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/boise-cascade
   - type: Website
