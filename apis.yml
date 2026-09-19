@@ -32,7 +32,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/boise-cascade.png
 url: https://raw.githubusercontent.com/api-evangelist/boise-cascade/refs/heads/main/apis.yml
 created: '2024-01-01'
-modified: '2026-04-19'
+modified: '2026-09-19'
 specificationVersion: '0.23'
 tags:
   - Building Materials
@@ -52,17 +52,17 @@ common:
   - type: Website
     url: https://www.bc.com
   - type: About
-    url: https://www.bc.com/our-company/
+    url: https://www.bc.com/company/
   - type: Products
     url: https://www.bc.com/ewp/
   - type: Software
     url: https://www.bc.com/ewp/software/
   - type: Distribution
-    url: https://www.bc.com/building-materials/
+    url: https://www.bc.com/distribution/
   - type: Blog
     url: https://www.bc.com/blog/
   - type: Contact
-    url: https://www.bc.com/contact-us/
+    url: https://www.bc.com/contact/
   - name: Use Cases
     type: UseCases
     data:
@@ -92,7 +92,7 @@ common:
           - Stakeholder Collaboration
           - Document Sharing
       - name: Building Materials Distribution
-        url: https://www.bc.com/building-materials/
+        url: https://www.bc.com/distribution/
         features:
           - Wholesale Distribution
           - Product Sourcing
@@ -142,6 +142,75 @@ common:
         features:
           - Saw Optimization
           - Cutting Schedules
+  - type: Leadership
+    url: https://www.bc.com/leadership/
+  - type: Newsroom
+    url: https://www.bc.com/news/
+  - type: Investors
+    url: https://www.bc.com/investors/
+  - type: Careers
+    url: https://www.bc.com/careers/
+  - type: Support
+    url: https://www.bc.com/ewp/support/
+  - type: EULA
+    url: https://www.bc.com/software/eula/
+  - type: CustomerPortal
+    name: BMD eCatalog (dealer ordering portal, login required)
+    url: https://www.bc.com/bmd-ecatalog/
+  - type: EDI
+    name: ANSI X12 EDI for Building Materials Distribution customers
+    url: https://www.bc.com/portal/customers/
+  - type: TermsOfService
+    url: https://www.bc.com/terms-conditions/website-terms-of-use/
+  - type: PrivacyPolicy
+    url: https://www.bc.com/privacy-policy/
+  - type: WellKnownProbe
+    url: well-known/boise-cascade-well-known.yml
+  - type: Conformance
+    url: conformance/boise-cascade-conformance.yml
+  - type: LLMsTxt
+    url: llms/boise-cascade-llms.txt
+  - type: RegulatoryPosture
+    url: regulatory/boise-cascade-regulatory-posture.yml
+  - type: GlobalPrivacyControl
+    url: regulatory/boise-cascade-regulatory-posture.yml
+  - type: DataSubjectRequest
+    url: regulatory/boise-cascade-regulatory-posture.yml
+  - type: Plans
+    url: plans/boise-cascade-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/boise-cascade-rate-limits.yml
 maintainers:
   - FN: Kin Lane
     email: kinlane@gmail.com
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Boise Cascade ships software only as end-user applications (BC Connect, BC Calc, BC Framer,
+    BC FastPlan, BC Estimator, BC FloorValue) and markets no API — www.bc.com/developers and
+    /api 404, the BC Connect backend api.bcconnect.com is an AWS API Gateway answering 403
+    Forbidden to every path with no documentation anywhere, the eCatalog and Wood Orders portals
+    redirect to logins, every /.well-known/ path misses on all seven hosts, and the only
+    published machine integration is an ANSI X12 EDI exchange over VAN/FTP arranged by email.
+  evidence:
+    - url: https://www.bc.com/developers/
+      status: 404
+    - url: https://www.bc.com/openapi.json
+      status: 404
+    - url: https://api.bcconnect.com/openapi.json
+      status: 403
+    - url: https://www.bcconnect.com/api
+      status: 302
+    - url: https://ecatalog.bc.com/
+      status: 302
+    - url: https://www.bc.com/.well-known/agent-card.json
+      status: 404
+    - url: https://www.bc.com/portal/customers/
+      status: 200
+  checked: '2026-09-19'

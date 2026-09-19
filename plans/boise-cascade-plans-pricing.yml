@@ -1,0 +1,13 @@
+generated: '2026-09-19'
+method: searched
+source: https://www.bc.com/ewp/software/
+plan_count: 0
+plans: []
+note: >-
+  Boise Cascade publishes no API and therefore no API plans or pricing. Its software page
+  (HTTP 200, 2026-09-19) describes BC Calc as free sizing software for design professionals and
+  routes dealers and distributors to "Request a Demo" / contact a software specialist for the
+  rest of the suite (BC Connect, BC Framer, BC FastPlan, BC Estimator, BC FloorValue, SawTek);
+  no price, tier, quota or overage is published anywhere on www.bc.com (/pricing 404). The BMD
+  eCatalog (ecatalog.bc.com) shows product pricing only after a dealer login. plan_count: 0 is an
+  honest zero, not an omission.

@@ -1,7 +1,9 @@
 ---
 title: Boise Cascade named one of the Most Trustworthy Companies in America in 2026
 url: https://www.bc.com/boise-cascade-named-one-of-the-most-trustworthy-companies-in-america-in-2026/
-date: '2026-04-09'
+published: ''
+date_basis: harvested
+harvested: '2026-04-09'
 author: amyevans
 feed_url: http://www.bc.com/news/feed
 ---

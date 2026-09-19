@@ -1,0 +1,13 @@
+generated: '2026-09-19'
+method: searched
+source: https://www.bc.com/portal/customers/
+limit_count: 0
+limits: []
+headers: []
+note: >-
+  Boise Cascade publishes no API, so no rate limits, quota windows or RateLimit-*/Retry-After
+  response headers are documented anywhere. The only machine integration it documents is an ANSI
+  X12 EDI exchange over VAN/FTP (the page above, HTTP 200 on 2026-09-19), which carries no rate
+  limit statement. The private BC Connect backend at api.bcconnect.com answers 403 Forbidden
+  (AWS API Gateway) to every anonymous request and exposes no limit headers. limit_count: 0 is an
+  honest zero, not an omission.

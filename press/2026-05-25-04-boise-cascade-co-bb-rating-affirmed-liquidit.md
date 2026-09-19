@@ -1,7 +1,9 @@
 ---
 title: Boise Cascade Co. 'BB-' Rating Affirmed; Liquidit
 url: https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/1486100
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Boise Cascade" press release artificial intelligence'
 position: 4
 source: serpapi-google

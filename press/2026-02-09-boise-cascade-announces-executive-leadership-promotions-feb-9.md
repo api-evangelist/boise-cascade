@@ -1,7 +1,9 @@
 ---
 title: Boise Cascade announces executive leadership promotions – Feb 9
 url: https://www.bc.com/boise-cascade-announces-executive-leadership-promotions-february-9-2026/
-date: '2026-02-09'
+published: ''
+date_basis: harvested
+harvested: '2026-02-09'
 author: amyevans
 feed_url: http://www.bc.com/news/feed
 ---

@@ -1,0 +1,41 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+source: https://www.bc.com/privacy-policy/
+note: >-
+  Harvest only. Boise Cascade publishes one privacy policy (Effective Date: August 18, 2026,
+  HTTP 200 on 2026-09-19) and no trust, security, legal or accessibility sub-site. Conventional
+  paths probed live on 2026-09-19 all returned the WordPress 404 page: /accessibility,
+  /accessibility/vpat, /legal, /legal/subprocessors, /legal/dpa, /privacy/requests, /transparency,
+  /trust, /security, /security/sbom, /docs/data-residency, /ai/transparency, /legal/report-content,
+  /do-not-sell, /your-privacy-choices. No SBOM, support-lifetime statement, accessibility
+  conformance report, subprocessor list, DPA, data-residency page, incident-notification SLA,
+  age-assurance, notice-and-action, transparency report or exit-assistance page is published,
+  so those signals are NOT recorded. The privacy policy states that the Services do NOT respond
+  to Do Not Track signals; that is recorded here as context, not as a signal.
+signals:
+  global_privacy_control:
+    honored: true
+    url: https://www.bc.com/privacy-policy/
+    statement: >-
+      "we do process 'Global Privacy Control' (GPC) signals as opt-out requests for targeted
+      advertising and sales of Personal Information in jurisdictions where required by law."
+    note: >-
+      Section 3.3 "Do Not Track and Global Privacy Control" of the privacy policy. Set from the
+      published statement only; no Sec-GPC header probe was sent. The same section says the
+      Services do not respond to standard DNT signals.
+  data_subject_request:
+    url: https://www.bc.com/privacy-policy/
+    channels:
+      - tel:+1-844-823-2382
+      - mailto:privacyofficer@bc.com
+      - https://secure.ethicspoint.com/domain/media/en/gui/71014/index.html
+    note: >-
+      Appendix A "U.S. State Privacy Addendum" enumerates access, deletion, correction, portability,
+      opt-out of sale/sharing/targeted advertising and non-discrimination rights for residents of the
+      named US states, and says to "submit a verifiable consumer request" by the toll-free number,
+      the privacyofficer@bc.com address (Cloudflare-obfuscated in the page source; decoded here) or
+      the EthicsPoint online portal. Identity verification and authorized-agent handling are
+      described. A separate CCPA/CPRA notice PDF is linked from the page
+      (cdn.mediavalet.com/.../California Consumer Privacy Act and Privacy Rights Act.pdf). No web
+      form on bc.com and no API endpoint is published.

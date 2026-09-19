@@ -1,7 +1,9 @@
 ---
 title: Boise Cascade announces quarterly dividend of $0.22 per share
 url: https://www.bc.com/boise-cascade-announces-quarterly-dividend-of-0-22-per-share-2/
-date: '2026-04-30'
+published: ''
+date_basis: harvested
+harvested: '2026-04-30'
 author: amyevans
 feed_url: http://www.bc.com/news/feed
 ---

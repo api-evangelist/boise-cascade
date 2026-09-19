@@ -1,7 +1,9 @@
 ---
 title: James Hardie and Boise Cascade Company Announce ...
 url: https://www.prnewswire.com/news-releases/james-hardie-and-boise-cascade-company-announce-expanded-distribution-partnership-302592218.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Boise Cascade" press release artificial intelligence'
 position: 1
 source: serpapi-google

@@ -1,7 +1,9 @@
 ---
 title: Boise Cascade reports fourth quarter and full year 2025 results
 url: https://www.bc.com/boise-cascade-reports-fourth-quarter-and-full-year-2025-results/
-date: '2026-02-23'
+published: ''
+date_basis: harvested
+harvested: '2026-02-23'
 author: amyevans
 feed_url: http://www.bc.com/news/feed
 ---

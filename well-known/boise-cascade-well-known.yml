@@ -1,0 +1,256 @@
+generated: '2026-09-19'
+method: probed
+source: 'Live GET of the named /.well-known/ path list on every host this record knows, probed 2026-09-19
+  with a browser User-Agent: the corporate site (www.bc.com and its apex), the BMD eCatalog ordering portal
+  (ecatalog.bc.com), the Wood Products order-status portal (woodorders.bc.com), and the three hosts behind
+  the BC Connect software suite (www.bcconnect.com, api.bcconnect.com, authentication.bcconnect.com).'
+result: 'none — no /.well-known/ document is served on any Boise Cascade host. www.bc.com (WordPress)
+  answers its themed 404 page for every path; the apex 301s to www; the two customer portals answer 404
+  (ecatalog.bc.com: IIS/ASP.NET MVC; woodorders.bc.com: JSON 404 from a Spring-style backend); www.bcconnect.com
+  redirects every path to its login; api.bcconnect.com is an AWS API Gateway that returns 403 Forbidden
+  for everything; authentication.bcconnect.com returns 200 with an identical SPA shell for every route,
+  which is not a document.'
+note: 'No WellKnown, SecurityTxt, APICatalog, AgentCard or OAuth pointer is emitted in apis.yml. This
+  file records an ABSENCE; a pointer would assert that Boise Cascade serves these surfaces. The company
+  publishes no developer program: its software products (BC Connect, BC Calc, BC Framer, BC FastPlan,
+  BC Estimator, BC FloorValue, SawTek) are end-user applications for EWP dealers and design professionals,
+  and its only published machine integration is an ANSI X12 EDI document exchange over VAN/FTP (see conformance/boise-cascade-conformance.yml).'
+hosts:
+- host: www.bc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: bc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+    note: 301 to the same path on www.bc.com, which 404s; the apex serves no document of its own
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+    note: 301 to the same path on www.bc.com, which 404s; the apex serves no document of its own
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+    note: 301 to the same path on www.bc.com, which 404s; the apex serves no document of its own
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    file: null
+    note: 301 to the same path on www.bc.com, which 404s; the apex serves no document of its own
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+    note: 301 to the same path on www.bc.com, which 404s; the apex serves no document of its own
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+    note: 301 to the same path on www.bc.com, which 404s; the apex serves no document of its own
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+    note: 301 to the same path on www.bc.com, which 404s; the apex serves no document of its own
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+    note: 301 to the same path on www.bc.com, which 404s; the apex serves no document of its own
+- host: ecatalog.bc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: woodorders.bc.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.bcconnect.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+    file: null
+    note: 302 to https://authentication.bcconnect.com/login?dest=<url> — the whole host, /.well-known/
+      included, sits behind the BC Connect login; no anonymous document
+  - path: /.well-known/openid-configuration
+    status: 302
+    file: null
+    note: 302 to https://authentication.bcconnect.com/login?dest=<url> — the whole host, /.well-known/
+      included, sits behind the BC Connect login; no anonymous document
+  - path: /.well-known/oauth-authorization-server
+    status: 302
+    file: null
+    note: 302 to https://authentication.bcconnect.com/login?dest=<url> — the whole host, /.well-known/
+      included, sits behind the BC Connect login; no anonymous document
+  - path: /.well-known/oauth-protected-resource
+    status: 302
+    file: null
+    note: 302 to https://authentication.bcconnect.com/login?dest=<url> — the whole host, /.well-known/
+      included, sits behind the BC Connect login; no anonymous document
+  - path: /.well-known/api-catalog
+    status: 302
+    file: null
+    note: 302 to https://authentication.bcconnect.com/login?dest=<url> — the whole host, /.well-known/
+      included, sits behind the BC Connect login; no anonymous document
+  - path: /.well-known/ai-plugin.json
+    status: 302
+    file: null
+    note: 302 to https://authentication.bcconnect.com/login?dest=<url> — the whole host, /.well-known/
+      included, sits behind the BC Connect login; no anonymous document
+  - path: /.well-known/agent-card.json
+    status: 302
+    file: null
+    note: 302 to https://authentication.bcconnect.com/login?dest=<url> — the whole host, /.well-known/
+      included, sits behind the BC Connect login; no anonymous document
+  - path: /.well-known/agent.json
+    status: 302
+    file: null
+    note: 302 to https://authentication.bcconnect.com/login?dest=<url> — the whole host, /.well-known/
+      included, sits behind the BC Connect login; no anonymous document
+- host: api.bcconnect.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+    note: 'AWS API Gateway (x-amzn-errortype: ForbiddenException) answers {"message":"Forbidden"} to every
+      path, /.well-known/ included'
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+    note: 'AWS API Gateway (x-amzn-errortype: ForbiddenException) answers {"message":"Forbidden"} to every
+      path, /.well-known/ included'
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+    note: 'AWS API Gateway (x-amzn-errortype: ForbiddenException) answers {"message":"Forbidden"} to every
+      path, /.well-known/ included'
+  - path: /.well-known/oauth-protected-resource
+    status: 403
+    file: null
+    note: 'AWS API Gateway (x-amzn-errortype: ForbiddenException) answers {"message":"Forbidden"} to every
+      path, /.well-known/ included'
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+    note: 'AWS API Gateway (x-amzn-errortype: ForbiddenException) answers {"message":"Forbidden"} to every
+      path, /.well-known/ included'
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+    note: 'AWS API Gateway (x-amzn-errortype: ForbiddenException) answers {"message":"Forbidden"} to every
+      path, /.well-known/ included'
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+    note: 'AWS API Gateway (x-amzn-errortype: ForbiddenException) answers {"message":"Forbidden"} to every
+      path, /.well-known/ included'
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+    note: 'AWS API Gateway (x-amzn-errortype: ForbiddenException) answers {"message":"Forbidden"} to every
+      path, /.well-known/ included'
+- host: authentication.bcconnect.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: 200 but the body is the same 666-byte Angular SPA shell (<authentication-root>) served for every
+      route — an SPA catch-all, not a document; recorded as a miss
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: 200 but the body is the same 666-byte Angular SPA shell (<authentication-root>) served for every
+      route — an SPA catch-all, not a document; recorded as a miss
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: 200 but the body is the same 666-byte Angular SPA shell (<authentication-root>) served for every
+      route — an SPA catch-all, not a document; recorded as a miss
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: 200 but the body is the same 666-byte Angular SPA shell (<authentication-root>) served for every
+      route — an SPA catch-all, not a document; recorded as a miss
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: 200 but the body is the same 666-byte Angular SPA shell (<authentication-root>) served for every
+      route — an SPA catch-all, not a document; recorded as a miss
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: 200 but the body is the same 666-byte Angular SPA shell (<authentication-root>) served for every
+      route — an SPA catch-all, not a document; recorded as a miss
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: 200 but the body is the same 666-byte Angular SPA shell (<authentication-root>) served for every
+      route — an SPA catch-all, not a document; recorded as a miss
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: 200 but the body is the same 666-byte Angular SPA shell (<authentication-root>) served for every
+      route — an SPA catch-all, not a document; recorded as a miss

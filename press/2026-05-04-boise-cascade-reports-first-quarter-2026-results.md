@@ -1,7 +1,9 @@
 ---
 title: Boise Cascade reports first quarter 2026 results
 url: https://www.bc.com/boise-cascade-reports-first-quarter-2026-results/
-date: '2026-05-04'
+published: ''
+date_basis: harvested
+harvested: '2026-05-04'
 author: amyevans
 feed_url: http://www.bc.com/news/feed
 ---

@@ -1,0 +1,41 @@
+generated: '2026-09-19'
+method: searched
+source: >-
+  https://www.bc.com/portal/customers/ (HTTP 200, 2026-09-19) — the "Get connected with EDI!"
+  page for Boise Cascade Building Materials Distribution customers, which names the standard,
+  the transports and the exact transaction sets exchanged in each direction.
+scope: >-
+  Boise Cascade publishes NO OpenAPI, AsyncAPI, GraphQL SDL, WSDL, Protobuf or any other
+  machine-readable API contract (see well-known/boise-cascade-well-known.yml and the x-coverage
+  block in apis.yml), so no oauth2/oidc/rfc9457/pagination/idempotency conformance can be
+  derived and those entries are deliberately absent rather than recorded as false. The one
+  standards-based machine integration the company documents is an ANSI X12 EDI exchange, and
+  that is what this file records. It is a document-exchange surface over VAN/FTP, not an HTTP
+  API: no endpoint, implementation guide, version list or test facility is published; onboarding
+  is by contact with the BMD EDI Group (Billerica_EDI@BC.com).
+conformance:
+
+- id: ansi-x12
+  name: ANSI ASC X12 EDI
+  conforms: true
+  category: domain-standard
+  domain: supply-chain-edi
+  evidence: https://www.bc.com/portal/customers/
+  note: >-
+    The page states verbatim "We utilize the ANSI X.12 EDI standards, and support a number of
+    versions" (versions not named) and lists the transaction sets Boise Cascade BMD RECEIVES
+    from trading partners — 810 Invoice, 820 Remittance Advice, 824 Application Advice,
+    850 Purchase Order, 855 Purchase Order Acknowledgement, 856 Advance Ship Notice, 997
+    Functional Acknowledgement — and SENDS — 810 Invoice, 820 Remittance Advice, 846 Inventory
+    Inquiry/Advice, 850 Purchase Order, 852 Item Activity, 855 Purchase Order Acknowledgement,
+    856 Advance Ship Notice, 864 Text Message, 870 Order Status Report, 997 Functional
+    Acknowledgement. Transports: third-party EDI Value Added Networks (VAN) and FTP, with
+    encryption for inbound and outbound documents. This is a published, provider-authored
+    statement of the standard and the message types; it is prose on a portal page, not a
+    contract file, so it is recorded as a searched claim and not as a contract-declared
+    domain-standard signature.
+  transaction_sets:
+    receive: ['810', '820', '824', '850', '855', '856', '997']
+    send: ['810', '820', '846', '850', '852', '855', '856', '864', '870', '997']
+  transports: [VAN, FTP]
+  contact: mailto:Billerica_EDI@BC.com
