@@ -64,29 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Boise Cascade is a leading North American manufacturer and distributor of building materials for the residential and commercial construction industry. The company produces engineered wood products (EWP) including I-joists, LVL beams, glulam, structural panels, and lumber, and distributes a broad range of building materials through its wholesale distribution network.
+Boise Cascade is a leading North American manufacturer and distributor of building materials for the residential and commercial construction industry. The company produces engineered wood products (EWP) including I-joists, LVL beams, and glulam, as well as structural panels and lumber, and distributes a broad range of building materials through its wholesale distribution network.
 
-**URL:** [https://www.bc.com](https://www.bc.com)
+**Areas:** Building Materials · Construction · Distribution · Engineered Wood · Forest Products · Lumber · Manufacturing · Fortune 1000
 
-**APIs.yml:** [View APIs Index](https://raw.githubusercontent.com/api-evangelist/boise-cascade/refs/heads/main/apis.yml)
+## Boise Cascade on APIs.io
 
-## Software Tools
+Everything profiled for Boise Cascade is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/boise-cascade/](https://apis.io/providers/boise-cascade/)** — or go straight to one of the APIs or properties below.
 
-Boise Cascade offers a suite of software tools for construction professionals:
+### Published properties
 
-- **BC Calc** - Engineering analysis tool for sizing beams, joists, columns, studs, and tall walls
-- **BC Framer** - 3D drafting tool for floor and roof framing layouts
-- **BC Connect** - Project collaboration hub for file exchange among stakeholders
-- **BC FastPlan** - Fast plan takeoffs and estimation
-- **BC Estimator** - Project cost estimation
-- **SawTek** - Saw optimization and cutting schedule generation
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Products
+#### Security (1)
 
-- **Engineered Wood Products (EWP)**: AJS Joists, BCI Joists, Versa-Lam LVL, Versa-Stud LVL, Rimboard, Boise Glulam, Mass Timber
-- **Panels and Lumber**: Structural panels, sheathing, Sturd-I-Floor, SolarPly, specialty products
-- **Building Materials Distribution**: Broad wholesale product mix for dealers, home improvement centers, and industrial customers
+Authentication, trust centre, and vulnerability disclosure.
 
-## Maintainers
+- [Boise Cascade Domain Security](https://apis.io/security/boise-cascade/boise-cascade-domain-security/)
 
-- **Kin Lane** - kinlane@gmail.com
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Boise Cascade Plans Pricing](https://apis.io/plans/boise-cascade/boise-cascade-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Boise Cascade Rate Limits](https://apis.io/rate-limits/boise-cascade/boise-cascade-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.bc.com)
+- [Support](https://www.bc.com/ewp/support/)
+- [Blog](https://www.bc.com/blog/)
+- [Terms of service](https://www.bc.com/terms-conditions/website-terms-of-use/)
+- [Privacy policy](https://www.bc.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 14.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 50.0 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 26.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/boise-cascade/](https://apis.io/providers/boise-cascade/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Boise Cascade: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/boise-cascade/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
